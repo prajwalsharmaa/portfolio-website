@@ -1,38 +1,29 @@
-import { createPreviewImage } from '../utils/createPreviewImage';
+import React from 'react';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Bid2BuyAuctionPlatform',
-      description: 'Auction platform project with a Spring Boot backend and server-rendered pages.',
+    //   date: 'Enter date (00/00/0000)',
+      description: 'Enter descreption of Project.',
       tags: ['Thymeleaf', 'CSS', 'JavaScript', 'Java', 'Spring Boot'],
-      previewImage: createPreviewImage({
-        title: 'Bid2Buy',
-        subtitle: 'Auction Platform',
-        accent: '#ef4444',
-      }),
+      image: '',
       github: 'https://github.com/prajwalsharmaa/Bid2BuyAuctionPlatform/',
     },
     {
       title: 'Nepathon-KalaChain',
-      description: 'Blockchain-themed concept project combining Solidity, Python, and web UI pieces.',
+    //   date: 'Enter date (00/00/0000)',
+      description: 'Enter descreption of Project.',
       tags: ['Solidity', 'Typescript', 'Python', 'HTML', 'JavaScript'],
-      previewImage: createPreviewImage({
-        title: 'Nepathon',
-        subtitle: 'KalaChain',
-        accent: '#f59e0b',
-      }),
+      image: '',
       github: 'https://github.com/prajwalsharmaa/Nepathon-KalaChain/',
     },
     {
       title: 'PharmaTracker-QrApp',
-      description: 'QR-oriented app concept with a simple front-end-first workflow.',
+    //   date: 'Enter date (00/00/0000)',
+      description: 'Enter descreption of Project.',
       tags: ['HTML', 'CSS', 'JavaScript'],
-      previewImage: createPreviewImage({
-        title: 'PharmaTracker',
-        subtitle: 'QR App',
-        accent: '#22c55e',
-      }),
+      image: '',
       github: 'https://github.com/prajwalsharmaa/PharmaTracker-QrApp/',
     },
   ];
@@ -57,11 +48,9 @@ const Projects = () => {
               {/* Project Image */}
               <div className="h-40 xs:h-48 sm:h-56 md:h-64 bg-[#1a1a1a] overflow-hidden">
                 <img
-                  src={project.previewImage}
-                  alt={`${project.title} preview`}
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
                 />
               </div>
 

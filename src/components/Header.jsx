@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { downloadResume } from './Resume';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Header = () => {
     };
 
     const handleCVDownload = () => {
-        scrollToSection('resume');
+        downloadResume();
     };
 
     return (

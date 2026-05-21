@@ -1,33 +1,21 @@
-import { createPreviewImage } from '../utils/createPreviewImage';
+import React from 'react';
 
 const Achievements = () => {
   const certificates = [
     {
+      image: '', // Add certificate image
       title: 'Certificate 1',
-      description: 'Achievement description pending.',
-      previewImage: createPreviewImage({
-        title: 'Certificate 01',
-        subtitle: 'Achievement',
-        accent: '#60a5fa',
-      }),
+      description: 'Achievement description',
     },
     {
+      image: '', // Add certificate image
       title: 'Certificate 2',
-      description: 'Achievement description pending.',
-      previewImage: createPreviewImage({
-        title: 'Certificate 02',
-        subtitle: 'Achievement',
-        accent: '#f97316',
-      }),
+      description: 'Achievement description',
     },
     {
+      image: '', // Add certificate image
       title: 'Certificate 3',
-      description: 'Achievement description pending.',
-      previewImage: createPreviewImage({
-        title: 'Certificate 03',
-        subtitle: 'Achievement',
-        accent: '#a855f7',
-      }),
+      description: 'Achievement description',
     },
   ];
 
@@ -50,16 +38,10 @@ const Achievements = () => {
             >
               <div className="h-48 xs:h-56 sm:h-64 md:h-72 lg:h-80 bg-[#1a1a1a]">
                 <img
-                  src={cert.previewImage}
-                  alt={`${cert.title} preview`}
+                  src={cert.image}
+                  alt={cert.title}
                   className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
                 />
-              </div>
-              <div className="p-4 xs:p-5 sm:p-6">
-                <h3 className="text-lg xs:text-xl font-semibold text-white">{cert.title}</h3>
-                <p className="text-gray-400 text-sm xs:text-base mt-2">{cert.description}</p>
               </div>
             </div>
           ))}

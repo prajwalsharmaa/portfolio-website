@@ -3,6 +3,7 @@ import {
     SiGit,
     SiJavascript,
     SiMysql,
+    SiOpenjdk,
     SiPython,
     SiSharp,
     SiSpring,

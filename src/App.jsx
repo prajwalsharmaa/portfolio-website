@@ -1,9 +1,9 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import About from './components/About';
 import Showcase from './components/Showcase';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
-import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -15,7 +15,6 @@ function App() {
       <Showcase />
       <Projects />
       <Achievements />
-      <Resume />
       <Contact />
       <Footer />
     </div>

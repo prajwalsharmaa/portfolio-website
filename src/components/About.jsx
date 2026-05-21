@@ -6,7 +6,7 @@ const About = () => {
           About Me
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed">
-          I&apos;m a passionate Full Stack Developer with a love for creating solutions to complex problems.
+          I'm a passionate Full Stack Developer with a love for creating solutions to complex problems.
         </p>
       </div>
     </section>
